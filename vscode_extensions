@@ -1,6 +1,5 @@
 code --install-extension albert.TabOut
 code --install-extension amatilda.vscode-fasm
-code --install-extension basdp.language-gas-x86
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension cweijan.vscode-office
 code --install-extension donjayamanne.githistory
