@@ -1,0 +1,148 @@
+{
+  // editor.*
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 19,
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.cursorSurroundingLines": 1,
+  "editor.cursorBlinking": "solid",
+  "editor.lineNumbers": "relative",
+  "editor.renderControlCharacters": true,
+  "editor.cursorStyle": "line",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "editor.mouseWheelZoom": false,
+  "editor.largeFileOptimizations": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["comment"],
+        "settings": {
+          "fontStyle": "italic", //set fontstyle for the above given scopes
+          "foreground": "#2cda2c70" //set color for the above given scopes
+        }
+      },
+      {
+        "scope": [
+          "punctuation",
+          "punctuation.separator.delimiter.c",
+          "punctuation.terminator.statement.c"
+        ],
+        "settings": {
+          "foreground": "#ffffa0ca" //set color for the above given scopes
+        }
+      }
+    ]
+  },
+
+  // workbench.*
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "terminalCursor.foreground": "#FFFF00",
+    "[One Dark Pro Darker]": {
+      "tab.activeBorder": "#FFFF00",
+      "panel.border": "#FFFF0056",
+      "activityBar.border": "#FFFF0056",
+      "activityBar.activeBorder": "#FFFF0056"
+    },
+    "editorLineNumber.foreground": "#ABB2BF",
+    "editorLineNumber.activeForeground": "#FFFF00",
+    "editorCursor.foreground": "#FFFF00",
+    "editorCursor.background": "#000"
+  },
+  "workbench.editorAssociations": {
+    "*.png": "luna.editor",
+    "*.ipynb": "jupyter-notebook",
+    "*.md": "default"
+  },
+
+  // terminal.*
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cursorWidth": 3,
+
+  // search specifics
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+
+  // doc. formatters specifics
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // git*
+  "git-graph.commitDetailsView.location": "Docked to Bottom",
+  "git-graph.graph.style": "angular",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "branch-create:command"
+  ],
+
+  // vim specifics:
+  "vim.hlsearch": true,
+  "vim.searchHighlightColor": "#0000FF",
+  "vim.searchHighlightTextColor": "#FFF",
+  "vim.easymotionIncSearchForegroundColor": "#FFF",
+  "vim.showMarksInGutter": true,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.matchpairs": "(:),{:},[:],<:>",
+  "vim.smartRelativeLine": true,
+  "vim.highlightedyank.color": "rgba(255, 255, 0, 0.5)",
+  "vim.highlightedyank.textColor": "rgba(0, 0, 0, 1)",
+  "vim.highlightedyank.duration": 750,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "commands": [":nohl"]
+    }
+  ],
+
+  // extension specifics
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "prettier.semi": false,
+  "explorer.confirmDragAndDrop": false,
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "python.defaultInterpreterPath": "C:\\Users\\Sufyan\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false
+  },
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.bold": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 1
+}
