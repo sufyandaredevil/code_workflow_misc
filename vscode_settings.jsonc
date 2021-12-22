@@ -1,5 +1,12 @@
 {
   // editor.*
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.matchBrackets": "always",
+  "editor.lineNumbers": "on",
   "editor.inlineSuggest.enabled": true,
   "editor.fontFamily": "Fira Code Retina",
   "editor.fontLigatures": true,
@@ -11,7 +18,6 @@
   "editor.detectIndentation": true,
   "editor.cursorSurroundingLines": 1,
   "editor.cursorBlinking": "solid",
-  "editor.lineNumbers": "relative",
   "editor.renderControlCharacters": true,
   "editor.cursorStyle": "line",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -144,5 +150,6 @@
   "oneDarkPro.vivid": true,
   "oneDarkPro.bold": true,
   "vsicons.dontShowNewVersionMessage": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "window.zoomLevel": 1
 }
