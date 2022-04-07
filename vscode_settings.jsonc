@@ -1,6 +1,7 @@
 {
   // editor.*
 
+  "editor.multiCursorModifier": "alt",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
@@ -13,8 +14,12 @@
   "editor.fontSize": 19,
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
   "editor.insertSpaces": true,
-  "editor.tabSize": 2,
   "editor.detectIndentation": true,
   "editor.cursorSurroundingLines": 1,
   "editor.cursorBlinking": "solid",
@@ -24,6 +29,7 @@
   "editor.wordWrap": "off",
   "editor.mouseWheelZoom": false,
   "editor.largeFileOptimizations": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -66,7 +72,6 @@
     "editorCursor.background": "#000"
   },
   "workbench.editorAssociations": {
-    "*.png": "luna.editor",
     "*.ipynb": "jupyter-notebook",
     "*.md": "default"
   },
@@ -151,5 +156,14 @@
   "oneDarkPro.bold": true,
   "vsicons.dontShowNewVersionMessage": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "window.zoomLevel": 1
+  "bashBeautify.tabSize": 2,
+  "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+  "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "vscode-office.openOutline": false
 }
