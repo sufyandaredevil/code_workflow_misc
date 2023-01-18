@@ -10,9 +10,9 @@ Currently available for:
     >
     > **[Extensions](/vscode_extensions)** (**Copy n paste** each line of command in the terminal and hit **Enter**)
 
-  - **[Vim](/_vimrc)** (`_vimrc` - Windows) (Setup: `C:\Users\%USERNAME%\`)
+  - **[Vim](/_vimrc)** (`_vimrc` - Windows) (Location: `C:\Users\%USERNAME%\`)
 
 - #### Linux
 
-  - **[NeoVIM](/init.vim)** (`init.vim` - Linux) (Setup: `~/.config/nvim/`)
+  - **[NeoVIM](/init.vim)** (`init.vim` - Linux) (Location: `~/.config/nvim/`)
     > [vim-plug](https://github.com/junegunn/vim-plug) should be installed to use this
