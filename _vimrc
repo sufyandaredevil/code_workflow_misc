@@ -9,4 +9,4 @@ set noswapfile
 
 syntax on
 
- nnoremap <Esc> :noh<CR><CR>
+nnoremap <Esc> :noh<CR><CR>
