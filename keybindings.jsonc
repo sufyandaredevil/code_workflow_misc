@@ -1,0 +1,39 @@
+[
+    {
+        "key": "ctrl+alt+i",
+        "command": "workbench.action.toggleDevTools",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-workbench.action.toggleDevTools",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "saveAll"
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "-saveAll"
+    },
+    //added from here
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    }
+]
