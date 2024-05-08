@@ -1,8 +1,12 @@
 {
-  // editor.*
-
+  // editor specifics
+  "editor.stickyScroll.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "editor.smoothScrolling": false,
+  "editor.fontSize": 15,
   "editor.multiCursorModifier": "alt",
-  "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.guides.highlightActiveBracketPair": true,
@@ -10,15 +14,8 @@
   "editor.inlineSuggest.enabled": true,
   "editor.fontFamily": "Fira Code Retina",
   "editor.fontLigatures": true,
-  "editor.fontSize": 19,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
-  "editor.insertSpaces": true,
   "editor.detectIndentation": true,
   "editor.cursorSurroundingLines": 1,
   "editor.cursorBlinking": "solid",
@@ -27,9 +24,15 @@
   "editor.cursorStyle": "line",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
-  "editor.mouseWheelZoom": false,
   "editor.largeFileOptimizations": false,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -51,9 +54,9 @@
       }
     ]
   },
+  "workbench.editor.tabSizing": "fixed",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "welcomePage",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.tree.renderIndentGuides": "always",
   "workbench.colorCustomizations": {
     "terminalCursor.foreground": "#FF0",
@@ -66,16 +69,17 @@
     "editorLineNumber.foreground": "#ABB2BF",
     "editorLineNumber.activeForeground": "#FF0",
     "editorCursor.foreground": "#FF0",
-    "editorCursor.background": "#000"
+    "editorCursor.background": "#000",
+    "statusBar.foreground": "#ABB2BF",
   },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.md": "default"
   },
-
-  // terminal.*
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.cursorWidth": 3,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.settings.openDefaultKeybindings": true,
 
   // search specifics
   "files.exclude": {
@@ -85,37 +89,8 @@
     "**/.factorypath": true
   },
 
-  // doc. formatters specifics
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  // git*
-  "git-graph.commitDetailsView.location": "Docked to Bottom",
-  "git-graph.graph.style": "angular",
-  "gitlens.gitCommands.skipConfirmations": [
-    "fetch:command",
-    "stash-push:command",
-    "switch:command",
-    "branch-create:command"
-  ],
-
   // vim specifics:
+  "vim.autoindent": true,
   "vim.hlsearch": true,
   "vim.searchHighlightColor": "#0000FF",
   "vim.searchHighlightTextColor": "#FFF",
@@ -132,41 +107,49 @@
     {
       "before": ["<Esc>"],
       "commands": [":nohl"]
-    }
+    },
+    {
+      "before": ["<C-p>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
   ],
 
+  // terminal specifics
+  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cursorWidth": 3,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.fontSize": 14,
+
+  //file to language mode association specifics:
+  "files.associations": {
+    "*.smali": "java"
+  },
+
   // extension specifics
+  "window.density.editorTabHeight": "compact",
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
   "extensions.autoUpdate": "onlyEnabledExtensions",
-  "prettier.semi": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
   "telemetry.telemetryLevel": "off",
-  "redhat.telemetry.enabled": false,
-  "highlight-matching-tag.highlightSelfClosing": true,
-  "python.defaultInterpreterPath": "C:\\Users\\Sufyan\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
   "oneDarkPro.vivid": true,
   "oneDarkPro.bold": false,
-  "vsicons.dontShowNewVersionMessage": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "bashBeautify.tabSize": 2,
-  "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
-  "livePreview.autoRefreshPreview": "On Changes to Saved Files",
-  "[handlebars]": {
+  "notebook.output.textLineLimit": 10000,
+  "notebook.lineNumbers": "on",
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.output.lineHeight": 15,
+  "notebook.output.fontSize": 10,
+  "notebook.markup.fontSize": 15,
+  "notebook.output.fontFamily": "10",
+  "git.openRepositoryInParentFolders": "never",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "vscode-office.openOutline": false,
-  "codeQL.telemetry.enableTelemetry": false,
-  "notebook.output.textLineLimit": 1000,
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "editor.minimap.enabled": false,
-  "window.menuBarVisibility": "compact",
-  "workbench.layoutControl.enabled": false,
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
-  "hexeditor.columnWidth": 16,
-  "hexeditor.showDecodedText": true,
-  "hexeditor.defaultEndianness": "little",
-  "hexeditor.inspectorType": "aside",
-  "editor.accessibilitySupport": "off"
 }
